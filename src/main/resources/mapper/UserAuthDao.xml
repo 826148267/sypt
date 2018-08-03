@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gzf.sypt.dao.UserAuthDao">
+    <insert id="insert" flushCache="true" parameterType="com.gzf.sypt.POJO.PO.UserAuthPO"
+            useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO
+        user_auth_tb(user_id,user_type,login_type,login_name,certificate,create_time,last_login_time,
+        last_login_ip,last_login_province,last_login_city,online_status)
+        VALUES
+        (#{userId},#{userType},#{loginType},#{loginName},#{certificate},#{createTime},#{lastLoginTime},
+        #{lastLoginIp},#{lastLoginProvince},#{lastLoginCity},#{onlineStatus})
+    </insert>
+    
+    <update id="update" flushCache="true" parameterType="com.gzf.sypt.POJO.PO.UserAuthPO"
+            useGeneratedKeys="true" keyProperty="id">
+        UPDATE
+        user_auth_tb
+        <set>
+            <if test="loginName != null and loginName != ''">login_name=#{loginName},</if>
+            <if test="certificate != null and certificate != ''">certificate=#{certificate},</if>
+            <if test="lastLoginTime != null and lastLoginTime != ''">last_login_time=#{lastLoginTime},</if>
+            <if test="lastLoginIp != null and lastLoginIp != ''">last_login_ip=#{lastLoginIp},</if>
+            <if test="lastLoginProvince != null and lastLoginProvince != ''">last_login_province=#{lastLoginProvince},</if>
+            <if test="lastLoginCity != null and lastLoginCity != ''">last_login_city=#{lastLoginCity},</if>
+            <if test="onlineStatus != null and onlineStatus != ''">online_status=#{onlineStatus},</if>
+        </set>
+        <where>
+            user_id=#{userId}
+        </where>
+    </update>
+</mapper>

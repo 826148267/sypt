@@ -1,0 +1,133 @@
+2018-08-03 15:44:51.207[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(phone_num,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 15:44:51.283[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 18127491159(Long), 22e996f74579b2fec33378111f2d9512(String), 2018-08-03 15:44:50.68(Timestamp), 2018-08-03 15:49:50.68(Timestamp)
+2018-08-03 15:44:56.051[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 15:44:58.601[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb AND now()<end_time 
+2018-08-03 15:44:58.602[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 
+2018-08-03 15:59:53.972[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(phone_num,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 15:59:54.045[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 18127491159(Long), 0bdce60e7cd1c494084c46b095e2d721(String), 2018-08-03 15:59:53.697(Timestamp), 2018-08-03 16:04:53.697(Timestamp)
+2018-08-03 15:59:54.124[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 15:59:56.828[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE AND AND now()<end_time 
+2018-08-03 15:59:56.828[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 
+2018-08-03 16:13:22.089[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(phone_num,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 16:13:22.158[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 18127491159(Long), 9fa5fec84ee2f0beffe266754fdb0696(String), 2018-08-03 16:13:21.928(Timestamp), 2018-08-03 16:18:21.928(Timestamp)
+2018-08-03 16:13:22.236[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 16:13:24.584[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE AND now()<end_time 
+2018-08-03 16:13:24.585[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 
+2018-08-03 16:18:28.529[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(phone_num,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 16:18:28.576[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 18127491159(Long), d59facb2f9bfb0aae068128d2d7cd4ff(String), 2018-08-03 16:18:28.442(Timestamp), 2018-08-03 16:23:28.442(Timestamp)
+2018-08-03 16:18:28.750[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 16:18:29.375[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE phone_num=? AND AND now()<end_time 
+2018-08-03 16:18:29.376[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 18127491159(Long)
+2018-08-03 16:19:10.780[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(phone_num,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 16:19:10.831[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 18127491159(Long), 257bd8ef21e393036fd214dd2d8dfc00(String), 2018-08-03 16:19:10.675(Timestamp), 2018-08-03 16:24:10.675(Timestamp)
+2018-08-03 16:19:10.864[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 16:21:02.055[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(phone_num,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 16:21:02.112[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 13612203454(Long), ca04b955f295f5a9ad9c4de556d9363d(String), 2018-08-03 16:21:01.945(Timestamp), 2018-08-03 16:26:01.945(Timestamp)
+2018-08-03 16:21:02.150[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 16:21:02.791[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE phone_num=? AND now()<end_time 
+2018-08-03 16:21:02.792[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 13612203454(Long)
+2018-08-03 16:21:03.002[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-<==      Total: 1
+2018-08-03 17:10:04.225[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(phone_num,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:10:04.288[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 13612203454(Long), a7b9fc562dd63c61ccddc926f3bd8b44(String), 2018-08-03 17:10:03.629(Timestamp), 2018-08-03 17:15:03.629(Timestamp)
+2018-08-03 17:10:04.405[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 17:10:10.098[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE phone_num=? AND now()<end_time 
+2018-08-03 17:10:10.098[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 13612203454(Long)
+2018-08-03 17:10:10.140[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-<==      Total: 1
+2018-08-03 17:22:10.598[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:22:10.649[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 826148267@qq.com(String), ff6230979c680cb2d8b2c52ef357ef9b(String), 2018-08-03 17:22:10.233(Timestamp), 2018-08-03 17:27:10.233(Timestamp)
+2018-08-03 17:22:10.698[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 17:23:31.958[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:23:32.005[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 826148267@qq.com(String), 5e1fc7f911ee3ba1fb9a482fda17056c(String), 2018-08-03 17:23:31.858(Timestamp), 2018-08-03 17:28:31.858(Timestamp)
+2018-08-03 17:23:32.018[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 17:31:06.201[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:31:06.272[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 826148267@qq.com(String), bfd0e17f07b2dbf2dc9bbb9f43a2b11b(String), 2018-08-03 17:31:06.013(Timestamp), 2018-08-03 17:36:06.013(Timestamp)
+2018-08-03 17:31:06.330[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 17:31:29.770[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:31:29.821[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 826148267@qq.com(String), 54a4fb1a4919c3265a61f95a2e6e3603(String), 2018-08-03 17:31:29.503(Timestamp), 2018-08-03 17:36:29.503(Timestamp)
+2018-08-03 17:31:29.914[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 17:35:10.966[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:35:11.017[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 826148267@qq.com(String), bd47ab738bb4c1557a8b7ff52d5a8a09(String), 2018-08-03 17:35:10.864(Timestamp), 2018-08-03 17:40:10.864(Timestamp)
+2018-08-03 17:35:11.064[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 17:36:33.349[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:36:33.428[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 826148267@qq.com(String), ee6a7c55a6ed2832d962ce5b492cfa7a(String), 2018-08-03 17:36:33.229(Timestamp), 2018-08-03 17:41:33.229(Timestamp)
+2018-08-03 17:36:33.454[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 17:37:30.229[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:37:30.294[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 826148267@qq.com(String), faaae5709fcd1ed857ce4663a16460ab(String), 2018-08-03 17:37:30.09(Timestamp), 2018-08-03 17:42:30.09(Timestamp)
+2018-08-03 17:37:30.328[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 17:39:39.756[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:39:39.816[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 826148267@qq.com(String), c5fe4132ec93854b799f8c2acf4685d0(String), 2018-08-03 17:39:39.55(Timestamp), 2018-08-03 17:44:39.55(Timestamp)
+2018-08-03 17:39:39.858[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 17:46:22.356[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:46:22.582[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 77d2ecbdc1771911c91bf391f39c9222(String), 2018-08-03 17:46:22.128(Timestamp), 2018-08-03 17:51:22.128(Timestamp)
+2018-08-03 17:46:22.627[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 17:47:21.667[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:47:21.722[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 52b78363c9f958e7771f12873cffac29(String), 2018-08-03 17:47:21.504(Timestamp), 2018-08-03 17:52:21.504(Timestamp)
+2018-08-03 17:47:21.757[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 17:55:13.356[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:55:13.410[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), b56f86a2b70c3c145297cdcd8cecd4fe(String), 2018-08-03 17:55:13.239(Timestamp), 2018-08-03 18:00:13.239(Timestamp)
+2018-08-03 17:55:14.472[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 17:57:32.428[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 17:57:32.499[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), f72805fdbf6ba7ec2f782bf00fe02b56(String), 2018-08-03 17:57:32.274(Timestamp), 2018-08-03 18:02:32.274(Timestamp)
+2018-08-03 17:57:32.553[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:01:11.913[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:01:11.966[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), f0b7f9426c923a07850959d53cf1d62f(String), 2018-08-03 18:01:11.585(Timestamp), 2018-08-03 18:06:11.585(Timestamp)
+2018-08-03 18:01:11.969[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:01:52.487[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:01:52.540[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 98571b6403c21d79b4703936defc1d21(String), 2018-08-03 18:01:52.228(Timestamp), 2018-08-03 18:06:52.228(Timestamp)
+2018-08-03 18:01:52.542[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:04:28.932[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:04:29.019[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 3dffa354fd62bffdef8aa4cc74bb2752(String), 2018-08-03 18:04:28.809(Timestamp), 2018-08-03 18:09:28.809(Timestamp)
+2018-08-03 18:04:29.022[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:04:39.617[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE AND now()<end_time 
+2018-08-03 18:04:39.618[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 
+2018-08-03 18:07:19.867[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:07:20.070[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 673161f517ddc5c632713e44ce77e667(String), 2018-08-03 18:07:19.746(Timestamp), 2018-08-03 18:12:19.746(Timestamp)
+2018-08-03 18:07:20.090[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:07:30.935[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE mail_box=? AND now()<end_time 
+2018-08-03 18:07:30.936[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 826148267@qq.com(String)
+2018-08-03 18:07:30.966[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-<==      Total: 0
+2018-08-03 18:09:33.214[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:09:33.286[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 72453ab75dfd54ee2f96cecb058569e0(String), 2018-08-03 18:09:33.092(Timestamp), 2018-08-03 18:14:33.092(Timestamp)
+2018-08-03 18:09:33.315[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:09:44.311[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE mail_box=? AND now()<end_time 
+2018-08-03 18:09:44.312[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 826148267@qq.com(String)
+2018-08-03 18:09:44.332[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-<==      Total: 0
+2018-08-03 18:11:29.699[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:11:29.754[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 0bea4a8be3a100dc4430973d5761da93(String), 2018-08-03 18:11:29.565(Timestamp), 2018-08-03 18:16:29.565(Timestamp)
+2018-08-03 18:11:29.823[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:15:28.829[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:15:29.060[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 6caba9b3154fc2f2b23c67a3d2fbbda8(String), 2018-08-03 18:15:28.693(Timestamp), 2018-08-03 18:20:28.693(Timestamp)
+2018-08-03 18:15:29.076[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:16:19.911[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:16:19.972[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 96f04a2672730060d262585771aa99ad(String), 2018-08-03 18:16:19.787(Timestamp), 2018-08-03 18:21:19.787(Timestamp)
+2018-08-03 18:16:19.974[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:16:39.957[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE mail_box=? AND now()<end_time 
+2018-08-03 18:16:39.957[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 826148267@qq.com(String)
+2018-08-03 18:16:39.980[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-<==      Total: 0
+2018-08-03 18:16:59.129[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:16:59.182[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 7018a35245792bbc9ddb5eb1ef4fd000(String), 2018-08-03 18:16:59.026(Timestamp), 2018-08-03 18:21:59.026(Timestamp)
+2018-08-03 18:16:59.185[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:17:09.867[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE mail_box=? AND now()<end_time 
+2018-08-03 18:17:09.867[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 826148267@qq.com(String)
+2018-08-03 18:17:09.885[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-<==      Total: 0
+2018-08-03 18:22:12.941[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:22:13.018[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 35bab9be5a5f7e711f57c5b613abc76d(String), 2018-08-03 18:22:12.849(Timestamp), 2018-08-03 18:27:12.849(Timestamp)
+2018-08-03 18:22:13.112[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:25:38.553[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE mail_box=? AND now()<end_time 
+2018-08-03 18:25:38.554[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 826148267@qq.com(String)
+2018-08-03 18:25:51.256[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:25:51.315[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), c3e54f0914cf29d19f877e79d197cd22(String), 2018-08-03 18:25:51.106(Timestamp), 2018-08-03 18:30:51.106(Timestamp)
+2018-08-03 18:25:51.363[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:26:04.481[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE AND now()<end_time 
+2018-08-03 18:26:04.482[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 
+2018-08-03 18:27:40.094[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:27:40.147[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 5464cbb2befb20253af577aaaf36df4a(String), 2018-08-03 18:27:39.941(Timestamp), 2018-08-03 18:32:39.941(Timestamp)
+2018-08-03 18:27:40.294[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:29:33.979[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE mail_box=? AND now()<end_time 
+2018-08-03 18:29:33.980[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 826148267@qq.com(String)
+2018-08-03 18:29:45.642[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==>  Preparing: INSERT INTO register_verific_tb(mail_box,verific,create_time,end_time) VALUES (?,?,?,?) 
+2018-08-03 18:29:45.713[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-==> Parameters: 283956614@qq.com(String), 4e2f2962ef1e7abe2f8c0b2d4ad3e781(String), 2018-08-03 18:29:45.493(Timestamp), 2018-08-03 18:34:45.493(Timestamp)
+2018-08-03 18:29:45.762[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.insert-<==    Updates: 1
+2018-08-03 18:29:59.127[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==>  Preparing: SELECT id,phone_num,mail_box,verific,create_time,end_time FROM register_verific_tb WHERE mail_box=? AND now()<end_time 
+2018-08-03 18:29:59.127[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-==> Parameters: 283956614@qq.com(String)
+2018-08-03 18:29:59.168[main] DEBUG com.gzf.sypt.dao.RegisterVerificDao.listAll-<==      Total: 1

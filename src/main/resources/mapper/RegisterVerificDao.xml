@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gzf.sypt.dao.RegisterVerificDao">
+    <insert id="insert" flushCache="true" parameterType="com.gzf.sypt.POJO.PO.RegisterVerificPO"
+            useGeneratedKeys="true" keyProperty="id">
+        <if test="phoneNum != null">
+            INSERT INTO
+            register_verific_tb(phone_num,verific,create_time,end_time)
+            VALUES
+            (#{phoneNum},#{verific},#{createTime},#{endTime})
+        </if>
+        <if test="mailBox != null">
+            INSERT INTO
+            register_verific_tb(mail_box,verific,create_time,end_time)
+            VALUES
+            (#{mailBox},#{verific},#{createTime},#{endTime})
+        </if>
+    </insert>
+
+    <select id="listAll" flushCache="false" resultType="com.gzf.sypt.POJO.PO.RegisterVerificPO"
+            useCache="false">
+         SELECT id,phone_num,mail_box,verific,create_time,end_time
+         FROM register_verific_tb
+         WHERE
+            <if test="phoneNum != null">
+               phone_num=#{phoneNum}
+            </if>
+            <if test="mailBox != null">
+               mail_box=#{mailBox}
+            </if>
+         <![CDATA[
+             AND now()<end_time
+         ]]>
+    </select>
+</mapper>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--scan表示如果配置文件改变就会重新加载,60s扫描一次;debug表示打印出logback运行状态，一般不用，logback已经很稳定了-->
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <!--定义参数常量-->
+    <!--日志级别trace<debug<info<warn<error-->
+    <property name="log.level" value="debug"/>
+    <!--文件保留时长-->
+    <property name="log.maxHistory" value="30"/>
+    <!--文件保存路径-->
+    <property name="log.filePath" value="${catalina.base}/logs/webapps"/>
+    <!--输出格式时间、线程、级别、类、信息、换行-->
+    <property name="log.pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS}[%thread] %-5level %logger{50}-%msg%n"/>
+
+    <!--以下将正式配置logback，上面是定义常量-->
+    <!--控制台设置-->
+    <appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <!--既负责转串又负责输出到文件-->
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+        </encoder>
+    </appender>
+
+    <!--debug-->
+    <!--随着时间的推移生成新的日志文件等-->
+    <appender name="debugAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.filePath}/debug.log</file>
+        <!--基于时间去滚动-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--从gz看出logback会自动压缩文件-->
+            <fileNamePattern>${log.filePath}/debug/debug.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+            <!--保存三十天-->
+            <maxHistory>${log.maxHistory}</maxHistory>
+        </rollingPolicy>
+        <!--转化字符串并输出到文件-->
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+        </encoder>
+        <!--过滤等级日志-->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+        <level>DEBUG</level>
+        <onMatch>ACCEPT</onMatch>
+        <onMismatch>DENY</onMismatch>
+    </filter>
+    </appender>
+
+    <!--info-->
+    <!--随着时间的推移生成新的日志文件等-->
+    <appender name="infoAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.filePath}/info.log</file>
+        <!--基于时间去滚动-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--从gz看出logback会自动压缩文件-->
+            <FileNamePattern>${log.filePath}/info/info.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+            <!--保存三十天-->
+            <maxHistory>${log.maxHistory}</maxHistory>
+        </rollingPolicy>
+        <!--转化字符串并输出到文件-->
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+        </encoder>
+        <!--过滤等级日志-->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!--error-->
+    <!--随着时间的推移生成新的日志文件等-->
+    <appender name="errorAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.filePath}/error.log</file>
+        <!--基于时间去滚动-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--从gz看出logback会自动压缩文件-->
+            <FileNamePattern>${log.filePath}/error/error.%d{yyyy-MM-dd}.log.gz</FileNamePattern>
+            <!--保存三十天-->
+            <maxHistory>${log.maxHistory}</maxHistory>
+        </rollingPolicy>
+        <!--转化字符串并输出到文件-->
+        <encoder>
+            <pattern>${log.pattern}</pattern>
+        </encoder>
+        <!--过滤等级日志-->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!--往这三个文件输出信息，与他们三个绑定,如果level没指定会继承root对应的级别-->
+    <!--设置了additivity="true"将会将父类root绑定的appender添加到logger中，但等级是按照子类来输出的，默认为false-->
+    <!--一个类的输出只能从logger和root其中一个输出，在包中指定,但由于继承所以logger可能可以看到root中信息-->
+    <logger name="com.gzf.sypt" level="${log.level}" additivity="true">
+        <appender-ref ref="debugAppender"/>
+        <appender-ref ref="infoAppender"/>
+        <appender-ref ref="errorAppender"/>
+    </logger>
+    <root level="info">
+        <appender-ref ref="consoleAppender"/>
+    </root>
+</configuration>
+
