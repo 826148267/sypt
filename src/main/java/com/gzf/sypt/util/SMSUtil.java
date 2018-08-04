@@ -18,10 +18,10 @@ public class SMSUtil {
     private static final String INTERF_URL = "https://api.miaodiyun.com/20150822/industrySMS/sendSMS";
 
     // 接口平台账户ID
-    private static final String ACCOUNT_SID = "42728645fa0e4c989a1eefec3440d43c";
+    private static final String ACCOUNT_SID = "*************************";
 
     // 平台auth_token口令
-    private static final String AUTH_TOKEN = "f89c16754bce4350ba7dfb05ff669c25";
+    private static final String AUTH_TOKEN = "*************************";
 
     // sig = MD5（ACCOUNT_SID+AUTH_TOKEN+timestamp）
     private static String sig = SecurityCodeUtil.getCipherText(ACCOUNT_SID + AUTH_TOKEN + timestamp, "MD5");
